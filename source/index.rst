@@ -13,6 +13,7 @@ Contents:
 
    what_this_thing_is_about.rst
    practical_vim.rst
+   python_essentials.rst
    python_links.rst
 
 
