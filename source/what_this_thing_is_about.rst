@@ -1,4 +1,4 @@
-Inroduction
+Introduction
 ***********
 
 `Sphinx`_. is an amazing software and I always wanted an excuse to use it and,
