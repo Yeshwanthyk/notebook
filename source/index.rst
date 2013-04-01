@@ -12,7 +12,7 @@ Contents:
    :maxdepth: 2
 
    what_this_thing_is_about.rst
-   practical_vim.rst
+   practical_vim/index.rst
    python_essentials.rst
    python_links.rst
 
