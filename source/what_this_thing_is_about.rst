@@ -1,5 +1,5 @@
 Introduction
-***********
+************
 
 `Sphinx`_. is an amazing software and I always wanted an excuse to use it and,
 I got the excuse in the form of `Python guide`_. and `pydanny event notes`_.
