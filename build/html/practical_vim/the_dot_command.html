@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -26,7 +28,7 @@
     <link rel="top" title="Notebook 0.1 documentation" href="../index.html" />
     <link rel="up" title="Practical Vim Notes" href="index.html" />
     <link rel="next" title="Python Essentials" href="../python_essentials.html" />
-    <link rel="prev" title="Practical Vim Notes" href="practical_vim.html" /> 
+    <link rel="prev" title="Introduction" href="practical_vim.html" /> 
   </head>
   <body>
     <div class="related">
@@ -39,7 +41,7 @@
           <a href="../python_essentials.html" title="Python Essentials"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="practical_vim.html" title="Practical Vim Notes"
+          <a href="practical_vim.html" title="Introduction"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">Notebook 0.1 documentation</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Practical Vim Notes</a> &raquo;</li> 
@@ -60,6 +62,16 @@ this is for too powerful, because it does exacty what it advertises.</p>
 <p>Another cool thing in this tip is the usage of <strong>A</strong>. What this basically does is,
 moves the cursor to the end of the line and switch into <em>insert</em> mode.</p>
 <p>The above two commands in combination can save one a lot of keystrokes.</p>
+<p>Another important way to handle repeated commands with the use of the <em>dot</em> command is by using f{char}</p>
+<p>For example:</p>
+<div class="highlight-python"><pre>var foo = "method("+argument1+","+argument2+")";</pre>
+</div>
+<p>Using <em>f{char}</em> which here would be f+ would immediately jump to the first
+instance of the <em>+</em> and after doing any changes we want using <em>;</em> would help
+us find the next instance of <em>+</em> and the dot command would help repeat our
+changes.</p>
+<p>When these two are used in tandem, can reduce the repetetive work a developer
+needs to do.</p>
 </div>
 
 
@@ -70,7 +82,7 @@ moves the cursor to the end of the line and switch into <em>insert</em> mode.</p
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
   <p class="topless"><a href="practical_vim.html"
-                        title="previous chapter">Practical Vim Notes</a></p>
+                        title="previous chapter">Introduction</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../python_essentials.html"
                         title="next chapter">Python Essentials</a></p>
@@ -106,7 +118,7 @@ moves the cursor to the end of the line and switch into <em>insert</em> mode.</p
           <a href="../python_essentials.html" title="Python Essentials"
              >next</a> |</li>
         <li class="right" >
-          <a href="practical_vim.html" title="Practical Vim Notes"
+          <a href="practical_vim.html" title="Introduction"
              >previous</a> |</li>
         <li><a href="../index.html">Notebook 0.1 documentation</a> &raquo;</li>
           <li><a href="index.html" >Practical Vim Notes</a> &raquo;</li> 
@@ -114,7 +126,7 @@ moves the cursor to the end of the line and switch into <em>insert</em> mode.</p
     </div>
     <div class="footer">
         &copy; Copyright 2013, Keerthi Yendamuri.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>
