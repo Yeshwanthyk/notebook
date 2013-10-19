@@ -15,6 +15,7 @@ Contents:
    practical_vim/index.rst
    python_essentials.rst
    python_links.rst
+   startup_school/index.rst
 
 
 Indices and tables
