@@ -1,7 +1,7 @@
 Introduction
 ============
 
-This is my brave attempt to try writting live notes for the `Startup School`_
+This is my attempt at trying to write notes for the `Startup School`_
 conference.
 
 .. _Startup School: startupschool.org

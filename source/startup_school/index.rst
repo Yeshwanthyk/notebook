@@ -9,6 +9,7 @@ Contents:
    intro.rst
    phil_libin.rst
    dan_siroker.rst
+   ron_cosway.rst
    chase_adam.rst
 
 Indices and tables
