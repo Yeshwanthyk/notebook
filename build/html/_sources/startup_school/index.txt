@@ -11,6 +11,9 @@ Contents:
    dan_siroker.rst
    ron_cosway.rst
    chase_adam.rst
+   jack_dorsey.rst
+   mark_zuck.rst
+   nathan.rst
 
 Indices and tables
 ==================
