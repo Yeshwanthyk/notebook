@@ -9,10 +9,10 @@ Welcome to Notebook's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    what_this_thing_is_about.rst
-   practical_vim/index.rst
+   vim/index.rst
    python_essentials.rst
    python_links.rst
    startup_school/index.rst
