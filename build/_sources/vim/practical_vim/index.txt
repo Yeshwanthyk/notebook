@@ -1,14 +1,13 @@
-ViM Everything
-==============
+Practical Vim Notes
+====================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   intro.rst
-   zen_of_vim.rst
-   practical_vim/index
+   practical_vim.rst
+   the_dot_command.rst
 
 Indices and tables
 ==================
