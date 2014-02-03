@@ -12,9 +12,9 @@ Contents:
    :maxdepth: 3
 
    what_this_thing_is_about.rst
-   vim/index.rst
+   haskell/index.rst
    startup_school/index.rst
-
+   vim/index.rst
 
 Indices and tables
 ==================

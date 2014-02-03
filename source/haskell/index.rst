@@ -1,5 +1,5 @@
-ViM Everything
-==============
+Haskell
+=======
 
 Contents:
 
@@ -7,8 +7,7 @@ Contents:
    :maxdepth: 2
 
    intro.rst
-   zen_of_vim.rst
-   practical_vim/index.rst
+   learn-you-a-haskell/index.rst
 
 Indices and tables
 ==================

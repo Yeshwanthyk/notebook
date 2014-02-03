@@ -8,7 +8,7 @@ Contents:
 
    intro.rst
    zen_of_vim.rst
-   practical_vim/index
+   practical_vim/index.rst
 
 Indices and tables
 ==================

@@ -1,14 +1,12 @@
-ViM Everything
-==============
+Learn You a Haskell
+===================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   intro.rst
-   zen_of_vim.rst
-   practical_vim/index.rst
+   chapter-2.rst
 
 Indices and tables
 ==================
