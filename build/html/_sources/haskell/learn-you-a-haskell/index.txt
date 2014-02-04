@@ -8,6 +8,7 @@ Contents:
 
    chapter-2.rst
    chapter-3.rst
+   chapter-4.rst
 
 Indices and tables
 ==================
