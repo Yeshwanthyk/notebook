@@ -14,10 +14,11 @@ Books
 -----
 Links
 -----
-* `How to Learn Haskell`
-* `Build a Compiler`
-* `20 Intermediate Question`
-* `99 Problems`
+* `How to Learn Haskell`_
+* `Build a Compiler`_
+* `20 Intermediate Question`_
+* `99 Problems`_
+* `Enter Haskell`_
 
 
 
@@ -29,3 +30,4 @@ Links
 .. _20 Intermediate Question: https://www.fpcomplete.com/user/DanBurton/20-intermediate-exercises
 .. _99 Problems: http://www.haskell.org/haskellwiki/H-99:_Ninety-Nine_Haskell_Problems
 .. _How to Learn Haskell: http://acm3.wustl.edu/functional/haskell.php
+.. _Enter Haskell: http://www.homolog.us/blogs/blog/2012/09/26/bye-bye-python-enter-haskell/
