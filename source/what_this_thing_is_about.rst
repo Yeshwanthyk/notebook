@@ -1,15 +1,17 @@
-Introduction
-************
+================
+Why this Madness
+================
 
 `Sphinx`_. is an amazing software and I always wanted an excuse to use it and,
-I got the excuse in the form of `Python guide`_. and `pydanny event notes`_.
-and also when I found out how amazingly easy it is to set up and use `Read the
-docs`_.
+after seeing it being used for the amazing `Python guide`_. and also by `Pydanny`_ for `pydanny event notes`_,
+I decided to go ahead and set it up for myself.
 
-So, this is going to be a place I can put my personal notes. Or atleast, that
-is my plan for now.
+This is home for most of notes I make while moving from one book to another. You can reach me at `Yesh`_
+and check out the code samples accompanying the notes on my `github`_ profile.
 
 .. _Sphinx: http://sphinx-doc.org/
 .. _Python guide: http://docs.python-guide.org/en/latest/
+.. _Pydanny: http://pydanny.com/
 .. _pydanny event notes: http://pydanny-event-notes.readthedocs.org/en/latest/
-.. _Read the docs: https://readthedocs.org/
+.. _Yesh: https://twitter.com/yesh
+.. _github: https://github.com/Yeshwanthyk

@@ -1,7 +1,7 @@
 ==============================
 `Working with Unix Processes`_
 ==============================
-By **`Jesse Storimer`_**
+By `Jesse Storimer`_
 
 The book uses ruby to explore UNIX processes. Jesse also gives the corresponding man page the command maps to.
 

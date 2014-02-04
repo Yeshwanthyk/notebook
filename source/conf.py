@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Notebook'
-copyright = u'2013, Keerthi Yendamuri'
+copyright = u'2014, Yesh Yendamuri'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -184,7 +184,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'Notebook.tex', u'Notebook Documentation',
-   u'Keerthi Yendamuri', 'manual'),
+   u'Yesh Yendamuri', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -214,7 +214,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'notebook', u'Notebook Documentation',
-     [u'Keerthi Yendamuri'], 1)
+     [u'Yesh Yendamuri'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -228,7 +228,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'Notebook', u'Notebook Documentation',
-   u'Keerthi Yendamuri', 'Notebook', 'One line description of project.',
+   u'Yesh Yendamuri', 'Notebook', 'In search of that perfect colorscheme',
    'Miscellaneous'),
 ]
 
@@ -246,9 +246,9 @@ texinfo_documents = [
 
 # Bibliographic Dublin Core info.
 epub_title = u'Notebook'
-epub_author = u'Keerthi Yendamuri'
-epub_publisher = u'Keerthi Yendamuri'
-epub_copyright = u'2013, Keerthi Yendamuri'
+epub_author = u'Yesh Yendamuri'
+epub_publisher = u'Yesh Yendamuri'
+epub_copyright = u'2014, Yesh Yendamuri'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
