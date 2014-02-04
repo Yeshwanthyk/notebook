@@ -2,9 +2,9 @@
 Chapter 2
 ==========
 
-----------------
-Lists and Tuples
-----------------
+-----
+Lists
+-----
 
 * Can't mix various types in lists
 * An **If** function should always have an else block
@@ -79,6 +79,9 @@ Lists and Tuples
             let removeNonUpperCase st = [c | c <- st, c `elem` [`A`..`Z`]]
 
 
+------
+Tuples
+------
 * **Tuples**
     - A tuple can contain different types, unlike a list.
     - But a tuple of fixed size is its own type. Which means, we cannot have:
