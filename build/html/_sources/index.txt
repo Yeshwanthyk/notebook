@@ -15,6 +15,7 @@ Contents:
    haskell/index.rst
    startup_school/index.rst
    vim/index.rst
+   working_with_unix_processes.rst
 
 Indices and tables
 ==================
