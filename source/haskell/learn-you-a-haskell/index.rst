@@ -10,6 +10,7 @@ Contents:
    chapter-3.rst
    chapter-4.rst
    chapter-5.rst
+   chapter-6.rst
 
 Indices and tables
 ==================
