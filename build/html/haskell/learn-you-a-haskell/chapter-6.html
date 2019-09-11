@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chapter 6 &#8212; Notebook 0.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Elm" href="../../elm/index.html" />
+    <link rel="prev" title="Chapter 5" href="chapter-5.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../elm/index.html" title="Elm"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="chapter-5.html" title="Chapter 5"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Notebook 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Haskell</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Learn You a Haskell</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="chapter-6">
+<h1>Chapter 6<a class="headerlink" href="#chapter-6" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="curried-functions">
+<h2>Curried Functions<a class="headerlink" href="#curried-functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In haskell, every function officially takes only one parameter. The way we get to give several parametes to function is by having <em>curried function</em></p></li>
+</ul>
+<div class="highlight-haskell notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">max</span> <span class="mi">4</span> <span class="mi">5</span>
+<span class="o">&gt;</span> <span class="p">(</span><span class="n">max</span> <span class="mi">4</span><span class="p">)</span> <span class="mi">5</span>
+
+<span class="nf">max</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Ord</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">a</span><span class="ow">-&gt;</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">a</span>
+<span class="nf">max</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Ord</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">a</span><span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The space in between is <em>funciton application</em></p></li>
+<li><p>You can write <em>partially applied</em> functions. By doing so, we are creating functions on the fly.</p></li>
+</ul>
+<div class="highlight-haskell notranslate"><div class="highlight"><pre><span></span><span class="nf">multiThree</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Num</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">a</span><span class="ow">-&gt;</span> <span class="n">a</span><span class="ow">-&gt;</span> <span class="n">a</span>
+<span class="nf">multiThree</span> <span class="n">x</span> <span class="n">y</span> <span class="n">z</span> <span class="ow">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">*</span> <span class="n">z</span>
+
+<span class="o">&gt;</span> <span class="kr">let</span> <span class="n">multiTwoWithNine</span> <span class="ow">=</span> <span class="n">multiThree</span> <span class="mi">9</span>
+<span class="o">&gt;</span> <span class="n">multiTwoWithNine</span> <span class="mi">2</span> <span class="mi">3</span>
+<span class="o">&gt;</span> <span class="mi">54</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Chapter 6</a><ul>
+<li><a class="reference internal" href="#curried-functions">Curried Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="chapter-5.html"
+                        title="previous chapter">Chapter 5</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../elm/index.html"
+                        title="next chapter">Elm</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/haskell/learn-you-a-haskell/chapter-6.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../elm/index.html" title="Elm"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="chapter-5.html" title="Chapter 5"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Notebook 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Haskell</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Learn You a Haskell</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Yesh Yendamuri.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

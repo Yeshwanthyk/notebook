@@ -1,35 +1,24 @@
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Working with Unix Processes &mdash; Notebook 0.1 documentation</title>
-    
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <meta charset="utf-8" />
+    <title>Working with Unix Processes &#8212; Notebook 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '0.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Notebook 0.1 documentation" href="index.html" />
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="The Dot command" href="vim/practical_vim/the_dot_command.html" /> 
-  </head>
-  <body>
-    <div class="related">
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -38,14 +27,14 @@
         <li class="right" >
           <a href="vim/practical_vim/the_dot_command.html" title="The Dot command"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Notebook 0.1 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Notebook 0.1 documentation</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="working-with-unix-processes">
 <h1><a class="reference external" href="http://www.jstorimer.com/products/working-with-unix-processes">Working with Unix Processes</a><a class="headerlink" href="#working-with-unix-processes" title="Permalink to this headline">¶</a></h1>
@@ -54,23 +43,23 @@
 <div class="section" id="pid">
 <h2>PID<a class="headerlink" href="#pid" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>On any UNIX system. Just type <em>man &lt;command_name&gt;</em></li>
-<li>Each process has a <strong>PID</strong>:</li>
+<li><p>On any UNIX system. Just type <em>man &lt;command_name&gt;</em></p></li>
+<li><p>Each process has a <strong>PID</strong>:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">puts</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>maps to <em>getpid(2)</em></li>
-<li>A global (albeit implicit) way to retreive the current pid is using <em>$$</em></li>
+<li><p>maps to <em>getpid(2)</em></p></li>
+<li><p>A global (albeit implicit) way to retreive the current pid is using <em>$$</em></p></li>
 </ul>
 </div>
 <div class="section" id="ppid">
 <h2>PPID<a class="headerlink" href="#ppid" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Each process has a Parent process <strong>PPID</strong>:</li>
+<li><p>Each process has a Parent process <strong>PPID</strong>:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">puts</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
 </pre></div>
 </div>
 <p><em>maps to *getppid(2)</em></p>
@@ -78,18 +67,18 @@
 <div class="section" id="file-descriptor">
 <h2>File Descriptor<a class="headerlink" href="#file-descriptor" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>In UNIX everything is treated as a file(resource). Any time a resource is opened within a process it is assigned a <strong>file descriptor</strong> number.</li>
-<li>File descriptor are <em>NOT</em> shared between unrelated processes. They live and die with the process they are bound to:</li>
+<li><p>In UNIX everything is treated as a file(resource). Any time a resource is opened within a process it is assigned a <strong>file descriptor</strong> number.</p></li>
+<li><p>File descriptor are <em>NOT</em> shared between unrelated processes. They live and die with the process they are bound to:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="n">passwd</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">)</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="n">passwd</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="n">passwd</span><span class="o">.</span><span class="n">fileno</span>                  <span class="o">=&gt;</span> <span class="mi">3</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>In ruby, open resources are represented by IO class</li>
-<li>The fileno is the way kernel keeps track of the resource:</li>
+<li><p>In ruby, open resources are represented by IO class</p></li>
+<li><p>The fileno is the way kernel keeps track of the resource:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="n">passwd</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">)</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="n">passwd</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="n">passwd</span><span class="o">.</span><span class="n">fileno</span>                  <span class="o">=&gt;</span> <span class="mi">3</span>
 
 <span class="n">hosts</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;/etc/hosts&#39;</span><span class="p">)</span>
@@ -101,28 +90,25 @@
 <span class="nb">puts</span> <span class="n">null</span><span class="o">.</span><span class="n">fileno</span>                    <span class="o">=&gt;</span> <span class="mi">3</span>
 </pre></div>
 </div>
-<ul>
-<li><dl class="first docutils">
-<dt>Key points from the above example</dt>
-<dd><ul class="first last simple">
-<li>File descriptors take the lowest unused value.</li>
-<li>Once a descriptor is closed, the number becomes available again.</li>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Key points from the above example</dt><dd><ul>
+<li><p>File descriptors take the lowest unused value.</p></li>
+<li><p>Once a descriptor is closed, the number becomes available again.</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first"><em>What</em> happened to 0,1 and 2 file descriptors?</p>
-</li>
+<li><p><em>What</em> happened to 0,1 and 2 file descriptors?</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">puts</span> <span class="no">STDIN</span><span class="o">.</span><span class="n">fileno</span>       <span class="o">=&gt;</span> <span class="mi">0</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span> <span class="no">STDIN</span><span class="o">.</span><span class="n">fileno</span>       <span class="o">=&gt;</span> <span class="mi">0</span>
 <span class="nb">puts</span> <span class="no">STDOUT</span><span class="o">.</span><span class="n">fileno</span>      <span class="o">=&gt;</span> <span class="mi">1</span>
 <span class="nb">puts</span> <span class="no">STDERR</span><span class="o">.</span><span class="n">fileno</span>      <span class="o">=&gt;</span> <span class="mi">2</span>
 </pre></div>
 </div>
-<ul>
-<li><dl class="first docutils">
-<dt>Ruby IO maps to <em>open(2)</em>, <em>close(2)</em>, <em>read(2)</em>, <em>write(2)</em>,</dt>
-<dd><p class="first last"><em>pipe(2)</em>, <em>fsync(2)</em>, <em>stat(2)</em> etc</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Ruby IO maps to <em>open(2)</em>, <em>close(2)</em>, <em>read(2)</em>, <em>write(2)</em>,</dt><dd><p><em>pipe(2)</em>, <em>fsync(2)</em>, <em>stat(2)</em> etc</p>
 </dd>
 </dl>
 </li>
@@ -131,63 +117,58 @@
 <div class="section" id="resource-limit">
 <h2>Resource Limit<a class="headerlink" href="#resource-limit" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Limits are imposed by the kernel:</li>
+<li><p>Limits are imposed by the kernel:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="no">Process</span><span class="o">.</span><span class="n">getrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">2560</span><span class="p">,</span> <span class="n">big_number</span><span class="o">]</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="no">Process</span><span class="o">.</span><span class="n">getrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">2560</span><span class="p">,</span> <span class="n">big_number</span><span class="o">]</span>
 </pre></div>
 </div>
-<ul>
-<li><dl class="first docutils">
-<dt>getrlimit return a 2-element array</dt>
-<dd><ul class="first last simple">
-<li>First number is the soft limit</li>
-<li>Second number is hard limit</li>
+<ul class="simple">
+<li><dl class="simple">
+<dt>getrlimit return a 2-element array</dt><dd><ul>
+<li><p>First number is the soft limit</p></li>
+<li><p>Second number is hard limit</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first">The soft limit can be bumped by:</p>
-</li>
+<li><p>The soft limit can be bumped by:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="no">Process</span><span class="o">.</span><span class="n">setrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">,</span> <span class="mi">4096</span><span class="p">)</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="no">Process</span><span class="o">.</span><span class="n">setrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">,</span> <span class="mi">4096</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>To set soft limit to the hard limit:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="no">Process</span><span class="o">.</span><span class="n">setrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">,</span> <span class="no">Process</span><span class="o">.</span><span class="n">getrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">)</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">)</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="no">Process</span><span class="o">.</span><span class="n">setrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">,</span> <span class="no">Process</span><span class="o">.</span><span class="n">getrlimit</span><span class="p">(</span><span class="ss">:NOFILE</span><span class="p">)</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul>
-<li><p class="first">If you exceed the soft limit, an exception will be raised (Errno::EMFILE)</p>
-</li>
-<li><dl class="first docutils">
-<dt>Real world examples:</dt>
-<dd><ul class="first last simple">
-<li>If you want to handle thousands of sumultaneous network connections</li>
-<li>Restrain system resources when executing third part code</li>
+<ul class="simple">
+<li><p>If you exceed the soft limit, an exception will be raised (Errno::EMFILE)</p></li>
+<li><dl class="simple">
+<dt>Real world examples:</dt><dd><ul>
+<li><p>If you want to handle thousands of sumultaneous network connections</p></li>
+<li><p>Restrain system resources when executing third part code</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first">Maps to <em>getrlimit(2)</em> and <em>setrlimit(2)</em></p>
-</li>
+<li><p>Maps to <em>getrlimit(2)</em> and <em>setrlimit(2)</em></p></li>
 </ul>
 </div>
 <div class="section" id="environment-of-the-process">
 <h2>Environment of the Process<a class="headerlink" href="#environment-of-the-process" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>A little ruby heavy chapter</li>
-<li>Every process inherits environment variable from its parent. Its set per process and global to each process.</li>
-<li>Ruby ENV used hash-style accessor, but doesn&#8217;t implement all the <strong>Hash</strong> API:</li>
+<li><p>A little ruby heavy chapter</p></li>
+<li><p>Every process inherits environment variable from its parent. Its set per process and global to each process.</p></li>
+<li><p>Ruby ENV used hash-style accessor, but doesn’t implement all the <strong>Hash</strong> API:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">puts</span> <span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;EDITOR&#39;</span><span class="o">]</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span> <span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;EDITOR&#39;</span><span class="o">]</span>
 <span class="nb">puts</span> <span class="no">ENV</span><span class="o">.</span><span class="n">has_key?</span><span class="p">(</span><span class="s1">&#39;PATH&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>Access to special Array called <strong>ARGV</strong></li>
-<li>You can change the name of the process:</li>
+<li><p>Access to special Array called <strong>ARGV</strong></p></li>
+<li><p>You can change the name of the process:</p></li>
 </ul>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">puts</span> <span class="vg">$PROGRAM_NAME</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span> <span class="vg">$PROGRAM_NAME</span>
 
 <span class="mi">10</span><span class="o">.</span><span class="n">downto</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
     <span class="vg">$PROGRAM_NAME</span> <span class="o">=</span> <span class="s2">&quot;Process: </span><span class="si">#{</span><span class="n">num</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -196,7 +177,7 @@
 </pre></div>
 </div>
 <ul class="simple">
-<li>Somewhat maps to <em>setenv(2)</em> and <em>getenv(2)</em>. Also, <em>environ(2)</em></li>
+<li><p>Somewhat maps to <em>setenv(2)</em> and <em>getenv(2)</em>. Also, <em>environ(2)</em></p></li>
 </ul>
 </div>
 </div>
@@ -205,9 +186,9 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
+  <h3><a href="index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Working with Unix Processes</a><ul>
 <li><a class="reference internal" href="#pid">PID</a></li>
@@ -222,29 +203,28 @@
   <h4>Previous topic</h4>
   <p class="topless"><a href="vim/practical_vim/the_dot_command.html"
                         title="previous chapter">The Dot command</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/working_with_unix_processes.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/working_with_unix_processes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -253,12 +233,12 @@
         <li class="right" >
           <a href="vim/practical_vim/the_dot_command.html" title="The Dot command"
              >previous</a> |</li>
-        <li><a href="index.html">Notebook 0.1 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Notebook 0.1 documentation</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2014, Yesh Yendamuri.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Yesh Yendamuri.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
     </div>
   </body>
 </html>

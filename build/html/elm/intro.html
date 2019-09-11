@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Elm &#8212; Notebook 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Startup School (2013)" href="../startup_school/index.html" />
+    <link rel="prev" title="Elm" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../startup_school/index.html" title="Startup School (2013)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Elm"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Notebook 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Elm</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="elm">
+<h1>Elm<a class="headerlink" href="#elm" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-Elm notranslate"><div class="highlight"><pre><span></span><span class="nv">isNegative</span> <span class="nv">n</span> <span class="nf">=</span> <span class="nv">n</span> <span class="nf">&lt;</span> <span class="mi">0</span>
+
+<span class="nv">isNegative</span> <span class="mi">4</span> <span class="c1">-- true</span>
+
+<span class="c1">-- Anon fns</span>
+<span class="nf">\</span><span class="nv">n</span> <span class="nf">-&gt;</span> <span class="nv">n</span> <span class="nf">&lt;</span> <span class="mi">0</span>
+
+<span class="nv">over9000</span> <span class="nv">powerLevel</span> <span class="nf">=</span> <span class="kr">if</span> <span class="nv">powerLevel</span> <span class="nf">&gt;</span> <span class="mi">9000</span> <span class="kr">then</span> <span class="s">&quot;It&#39;s over 9000!!!&quot;</span> <span class="kr">else</span> <span class="s">&quot;meh&quot;</span>
+</pre></div>
+</div>
+<div class="section" id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-Elm notranslate"><div class="highlight"><pre><span></span><span class="nv">names</span> <span class="nf">=</span> <span class="p">[</span> <span class="s">&quot;Alice&quot;</span><span class="p">,</span> <span class="s">&quot;Bob&quot;</span><span class="p">,</span> <span class="s">&quot;Chuck&quot;</span> <span class="p">]</span>
+
+<span class="kt">List</span><span class="nf">.</span><span class="nv">isEmpty</span> <span class="nv">names</span>
+
+<span class="kt">List</span><span class="nf">.</span><span class="nv">length</span> <span class="nv">names</span>
+
+<span class="kt">List</span><span class="nf">.</span><span class="nv">reverse</span> <span class="nv">names</span>
+
+<span class="nv">double</span> <span class="nv">n</span> <span class="nf">=</span> <span class="nv">n</span> <span class="nf">*</span> <span class="mi">2</span>
+
+<span class="nv">nums</span> <span class="nf">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="kt">List</span><span class="nf">.</span><span class="nv">map</span> <span class="nv">double</span> <span class="nv">nums</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tuples">
+<h2>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Elm</a><ul>
+<li><a class="reference internal" href="#lists">Lists</a></li>
+<li><a class="reference internal" href="#tuples">Tuples</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Elm</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../startup_school/index.html"
+                        title="next chapter">Startup School (2013)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/elm/intro.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../startup_school/index.html" title="Startup School (2013)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Elm"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Notebook 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Elm</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Yesh Yendamuri.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>
